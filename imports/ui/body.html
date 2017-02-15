@@ -1,0 +1,17 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact b00k</h1>
+    </header>
+    <ul>
+      {{#each contacts}}
+        {{Contact}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+<template name="Contact">
+  <li>{{name}}</li>
+  <li>{{number}}</li>
+  <li>{{tp}}</li>
+</template>
