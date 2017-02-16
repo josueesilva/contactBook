@@ -2,6 +2,14 @@
   <div class="container">
     <header>
       <h1>Contact b00k</h1>
+      <form class="new-contact">
+        <input type="text" id="name" name="name" placeholder="Digite o nome do contato" />
+        <input type="text" id="number" placeholder="Digite o numero do contato" />
+        <input type="text" id="tp" placeholder="0: fixo, 1:celular, 2:comercial" />
+        
+      </form>
+
+        <button class="enviamanolo">Enviar</button>
     </header>
     <ul>
       {{# each contacts}}
