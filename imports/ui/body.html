@@ -5,11 +5,13 @@
       <form class="new-contact">
         <input type="text" id="name" name="name" placeholder="Digite o nome do contato" />
         <input type="text" id="number" placeholder="Digite o numero do contato" />
-        <input type="text" id="tp" placeholder="0: fixo, 1:celular, 2:comercial" />
-        
+        <select id="tp">
+          <option value="0">Telefone</option>
+          <option value="1">Celular</option>
+          <option value="2">Comercial</option>
+        </select>
+        <button class="insertContact">Enviar</button>
       </form>
-
-        <button class="enviamanolo">Enviar</button>
     </header>
     <ul>
       {{# each contacts}}
